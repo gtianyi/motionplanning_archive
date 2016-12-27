@@ -1,0 +1,147 @@
+OMPL version 1.2.1
+Experiment Quadrotor
+0 experiment properties
+Running on ai2
+Starting at 2016-11-03 22:32:47
+<<<|
+Properties of the state space 'CompoundSpace0'
+  - signature: 10 0 12 5 6 1 3 3 3 1 6 
+  - dimension: 12
+  - extent: 88.4805
+  - sanity checks for state space passed
+  - probability of valid states: 0.967
+  - average length of a valid motion: 16.0095
+  - average number of samples drawn per second: sampleUniform()=1.98303e+06 sampleUniformNear()=1.89578e+06 sampleGaussian()=994811
+Settings for the state space 'CompoundSpace0'
+  - state validity check resolution: 1%
+  - valid segment count factor: 1
+  - state space:
+Compound state space 'CompoundSpace0' of dimension 12 (locked) [
+Compound state space 'SE3CompoundSpace1' of dimension 6 (locked) [
+Real vector state space 'RealVectorSpace2' of dimension 3 with bounds: 
+  - min: -30 -30 -5 
+  - max: 30 30 5 
+ of weight 1
+SO(3) state space 'SO3Space3' (represented using quaternions)
+ of weight 1
+]
+Registered projections:
+  - <default>
+Projection of dimension 3
+Cell sizes (computed defaults): [3 3 0.5]
+ of weight 1
+Real vector state space 'RealVectorSpace4' of dimension 6 with bounds: 
+  - min: -1 -1 -1 -1 -1 -1 
+  - max: 1 1 1 1 1 1 
+ of weight 0.3
+]
+Registered projections:
+  - <default>
+Projection of dimension 3
+Cell sizes (computed defaults): [3 3 0.5]
+
+Declared parameters:
+longest_valid_segment_fraction = 0.01
+projection.cellsize.0 = 3
+projection.cellsize.1 = 3
+projection.cellsize.2 = 0.5
+projection.cellsize_factor = 
+valid_segment_count_factor = 1
+Valid state sampler named uniform with parameters:
+nr_attempts = 100
+  - control space:
+Real vector control space 'RealVectorControl[CompoundSpace0]' with bounds: 
+  - min: 5 -1 -1 -1 
+  - max: 15 1 1 1 
+  - can propagate backward: yes
+  - propagation step size: 0.05
+  - propagation duration: [1, 100]
+Planner KPIECE1 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: bad_score_factor border_fraction goal_bias good_score_factor max_close_samples
+Declared parameters for planner KPIECE1:
+bad_score_factor = 0.45000000000000001
+border_fraction = 0.80000000000000004
+goal_bias = 0.050000000000000003
+good_score_factor = 0.90000000000000002
+max_close_samples = 30
+Start states:
+Compound state [
+Compound state [
+RealVectorState [0.00960625 -0.00279562 0.399287]
+SO3State [0 0 0 1]
+]
+RealVectorState [0 0 0 0 0 0]
+]
+Goal state, threshold = 1, memory address = 0x10e4d30, state = 
+Compound state [
+Compound state [
+RealVectorState [0 -25 0]
+SO3State [0 0 0 1]
+]
+RealVectorState [0 0 0 0 0 0]
+]
+OptimizationObjective = nullptr
+There are 0 solutions
+
+Properties of benchmarked planners:
+Planner SSTStar specs:
+Multithreaded:                 No
+Reports approximate solutions: No
+Can optimize solutions:        No
+Aware of the following parameters:
+|>>>
+<<<|
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                2
+On-line CPU(s) list:   0,1
+Thread(s) per core:    1
+Core(s) per socket:    2
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 23
+Stepping:              10
+CPU MHz:               2000.000
+BogoMIPS:              6316.68
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              6144K
+NUMA node0 CPU(s):     0,1
+|>>>
+1 is the random seed
+300 seconds per run
+1000 MB per run
+1 runs per planner
+300.489 seconds spent to collect the data
+1 enum type
+status|Unknown status|Invalid start|Invalid goal|Unrecognized goal type|Timeout|Approximate solution|Exact solution|Crash|Unknown status
+1 planners
+control_SSTStar
+6 common properties
+longest_valid_segment_fraction = 0.01
+projection.cellsize.0 = 3
+projection.cellsize.1 = 3
+projection.cellsize.2 = 0.5
+projection.cellsize_factor = 
+valid_segment_count_factor = 1
+7 properties for each run
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+1 runs
+0; 0; 100.152344; 0; 6; 300.473551; 0.000000; 
+.
+Solution Stream
+12.1513 128.15
+30.4992 127.9

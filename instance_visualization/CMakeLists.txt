@@ -20,7 +20,7 @@ include_directories(
 )
 
 target_link_libraries(Visualizer
-	"/usr/local/lib/libassimp.dylib"
+	"/usr/local/lib/libassimp.so.3.3.1"
 )
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")

@@ -9,7 +9,7 @@ public:
 	virtual void addStartState(MotionWithCost* m) = 0;
 	virtual std::pair<MotionWithCost*, bool> shouldPrune(MotionWithCost *m) = 0;
 	virtual bool canSelectNode() const = 0;
-	virtual MotionWithCost* selectNode(MotionWithCost *sample, const boost::shared_ptr<ompl::NearestNeighbors<Motion*>> &nn) const = 0;
+	virtual MotionWithCost* selectNode(MotionWithCost *sample, std::shared_ptr<ompl::NearestNeighbors<Motion*>> &nn) const = 0;
 	virtual std::pair<std::unordered_set<MotionWithCost*>, std::unordered_set<MotionWithCost*>> foundSolution(const ompl::base::Cost &incumbent) = 0;
 	virtual void cleanupTree(MotionWithCost* m) = 0;
 	virtual void cleanupWitnesses(const std::pair<std::unordered_set<MotionWithCost*>, std::unordered_set<MotionWithCost*>> &removed) = 0;
@@ -24,7 +24,7 @@ public:
 	void addStartState(MotionWithCost* m) override {}
 	std::pair<MotionWithCost*, bool> shouldPrune(MotionWithCost *m) override { return std::make_pair(nullptr, false); }
 	bool canSelectNode() const override { return false; }
-	MotionWithCost* selectNode(MotionWithCost *sample, const boost::shared_ptr<ompl::NearestNeighbors<Motion*>> &nn) const override { return nullptr; }
+	MotionWithCost* selectNode(MotionWithCost *sample, std::shared_ptr<ompl::NearestNeighbors<Motion*>> &nn) const override { return nullptr; }
 	std::pair<std::unordered_set<MotionWithCost*>, std::unordered_set<MotionWithCost*>> foundSolution(const ompl::base::Cost &incumbent) override { return std::pair<std::unordered_set<MotionWithCost*>, std::unordered_set<MotionWithCost*>>(); }
 	void cleanupTree(MotionWithCost* m) override {}
 	void cleanupWitnesses(const std::pair<std::unordered_set<MotionWithCost*>, std::unordered_set<MotionWithCost*>> &removed) override {};
@@ -95,7 +95,7 @@ public:
 		return true;
 	}
 
-	MotionWithCost* selectNode(MotionWithCost *sample, const boost::shared_ptr<ompl::NearestNeighbors<Motion*>> &nn) const override {
+	MotionWithCost* selectNode(MotionWithCost *sample, std::shared_ptr<ompl::NearestNeighbors<Motion*>> &nn) const override {
 		std::vector<Motion*> ret;
 		MotionWithCost *selected = nullptr;
 		ompl::base::Cost bestCost = optimizationObjective->infiniteCost();

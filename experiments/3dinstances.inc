@@ -31,25 +31,25 @@ BOUNDS[4]="-30 30 -30 30 -5 5"
 
 # FIFTH ELEMENT
 
-MAP[5]="fifthelement.dae"
-STARTGOAL[5]="Start ? 15 7 5\nGoal ? -15 7 5\n"
-BOUNDS[5]="-30 30 -30 30 0 15"
+# MAP[5]="fifthelement.dae"
+# STARTGOAL[5]="Start ? 15 7 5\nGoal ? -15 7 5\n"
+# BOUNDS[5]="-30 30 -30 30 0 15"
 
-MAP[6]="fifthelement.dae"
-STARTGOAL[6]="Start ? 15 -7 5\nGoal ? -15 -7 5\n"
-BOUNDS[6]="-30 30 -30 30 0 15"
+# MAP[6]="fifthelement.dae"
+# STARTGOAL[6]="Start ? 15 -7 5\nGoal ? -15 -7 5\n"
+# BOUNDS[6]="-30 30 -30 30 0 15"
 
-MAP[7]="fifthelement.dae"
-STARTGOAL[7]="Start ? 15 -7 5\nGoal ? -15 7 5\n"
-BOUNDS[7]="-30 30 -30 30 0 15"
+# MAP[7]="fifthelement.dae"
+# STARTGOAL[7]="Start ? 15 -7 5\nGoal ? -15 7 5\n"
+# BOUNDS[7]="-30 30 -30 30 0 15"
 
-MAP[8]="fifthelement.dae"
-STARTGOAL[8]="Start ? 15 7 5\nGoal ? -15 -7 5\n"
-BOUNDS[8]="-30 30 -30 30 0 15"
+# MAP[8]="fifthelement.dae"
+# STARTGOAL[8]="Start ? 15 7 5\nGoal ? -15 -7 5\n"
+# BOUNDS[8]="-30 30 -30 30 0 15"
 
-MAP[9]="fifthelement.dae"
-STARTGOAL[9]="Start ? 7 15 5\nGoal ? -7 -15 5\n"
-BOUNDS[9]="-30 30 -30 30 0 15"
+# MAP[9]="fifthelement.dae"
+# STARTGOAL[9]="Start ? 7 15 5\nGoal ? -7 -15 5\n"
+# BOUNDS[9]="-30 30 -30 30 0 15"
 
 # # Hallways
 

@@ -6,25 +6,25 @@ PLANNER_C=-1
 BEASTVERSION="_4"
 
 ABSTRACTION_PATH=(
-#				  "abstractiontype=prm numprmedges=10 prmsize=100" #
-#				  "abstractiontype=prm numprmedges=10 prmsize=1000" #
-#				  "abstractiontype=prm numprmedges=10 prmsize=10000" #
-#				  "abstractiontype=prm numprmedges=5 prmsize=100" #
-				  "abstractiontype=prm numprmedges=5 prmsize=1000" #
-#				  "abstractiontype=prm numprmedges=5 prmsize=10000" #
-#				  "abstractiontype=grid gridhintsize=0.5 gridconnectivity=fourway" #
-#				  "abstractiontype=grid gridhintsize=0.5 gridconnectivity=diagonal"
-				)
+    #"abstractiontype=prm numprmedges=10 prmsize=100"
+    #"abstractiontype=prm numprmedges=10 prmsize=1000"
+    #"abstractiontype=prm numprmedges=10 prmsize=10000"
+    #"abstractiontype=prm numprmedges=5 prmsize=100"
+    "abstractiontype=prm numprmedges=5 prmsize=1000"
+    #"abstractiontype=prm numprmedges=5 prmsize=10000"
+    #"abstractiontype=grid gridhintsize=0.5 gridconnectivity=fourway"
+    #"abstractiontype=grid gridhintsize=0.5 gridconnectivity=diagonal"
+)
 ABSTRACTION_PARAM=(
-#				   "AbstractionType ? PRM\nNumEdges ? 10\nPRMSize ? 100" #
-#				   "AbstractionType ? PRM\nNumEdges ? 10\nPRMSize ? 1000" #
-#				   "AbstractionType ? PRM\nNumEdges ? 10\nPRMSize ? 10000" #
-#				   "AbstractionType ? PRM\nNumEdges ? 5\nPRMSize ? 100" #
-				   "AbstractionType ? PRM\nNumEdges ? 5\nPRMSize ? 1000" #
-#				   "AbstractionType ? PRM\nNumEdges ? 5\nPRMSize ? 10000" #
-#				   "AbstractionType ? GRID\nGridHintSize ? 0.5\nGridConnectivity ? FourWay" #
-#				   "AbstractionType ? GRID\nGridHintSize ? 0.5\nGridConnectivity ? Diagonals" #
-				  )
+    #"AbstractionType ? PRM\nNumEdges ? 10\nPRMSize ? 100"
+    #"AbstractionType ? PRM\nNumEdges ? 10\nPRMSize ? 1000"
+    #"AbstractionType ? PRM\nNumEdges ? 10\nPRMSize ? 10000"
+    #"AbstractionType ? PRM\nNumEdges ? 5\nPRMSize ? 100"
+    "AbstractionType ? PRM\nNumEdges ? 5\nPRMSize ? 1000"
+    #"AbstractionType ? PRM\nNumEdges ? 5\nPRMSize ? 10000"
+    #"AbstractionType ? GRID\nGridHintSize ? 0.5\nGridConnectivity ? FourWay"
+    #"AbstractionType ? GRID\nGridHintSize ? 0.5\nGridConnectivity ? Diagonals"
+)
 ABSTRACTION_C=0
 
 #2 4 
@@ -46,19 +46,21 @@ SELECTIONRADIUS_C=0
 PRUNINGRADIUS=(1.0)
 PRUNINGRADIUS_C=0
 
-N0=(100)
+N0=(100000)
 N0_C=0
 
-XI=(0.5)
+XI=(0.99)
 XI_C=0
 
 SSTPRUNING=(SST SSTStar None)
 SSTPRUNING_C=0
 
-COSTPRUNING=(G F None)
+COSTPRUNING=(G)
+#COSTPRUNING=(G F None)
 COSTPRUNING_C=0
 
-SAMPLER=(BEAST Uniform)
+#SAMPLER=(BEAST Uniform)
+SAMPLER=(BEAST)
 SAMPLER_C=0
 
 ALG_TOTAL=$((${#PLANNER[@]} * ${#ABSTRACTION_PATH[@]} * ${#STATERADIUS[@]} * ${#WHICHSEARCH[@]} * ${#EDGEDISTRIBUTION_PATH[@]} * ${#SELECTIONRADIUS[@]} * ${#PRUNINGRADIUS[@] * ${#N0[@]} * ${#XI[@]} * ${#SSTPRUNING[@]} * ${#COSTPRUNING[@]} * ${#SAMPLER[@]}))

@@ -1,0 +1,66 @@
+\documentclass[twocolumn]{article}
+\usepackage[letterpaper, margin=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{placeins}
+\begin{document}
+
+\begin{table}[]
+\centering
+  \caption{Factor of BEAST CPU Time (Blimp)}
+\begin{tabular}{c c c}
+&P--PRM&KPIECE\\
+forest&0.516243&0.275275\\
+fifthelement&0.790717&0.115899\\
+\end{tabular}
+\end{table}
+
+\begin{table}[]
+\centering
+  \caption{Factor of BEAST CPU Time (DynamicCar)}
+\begin{tabular}{c c c}
+&P--PRM&KPIECE\\
+forest&0.513992&0.033488\\
+single-wall&0.683505&0.218496\\
+3-ladder&0.551833&0.369422\\
+parking-lot&0.598307&0.217902\\
+intersection&0.765333&0.584492\\
+\end{tabular}
+\end{table}
+
+\begin{table}[]
+\centering
+  \caption{Factor of BEAST CPU Time (Hovercraft)}
+\begin{tabular}{c c c}
+&P--PRM&KPIECE\\
+3-ladder&0.811689&0.590207\\
+parking-lot&1.102154&0.540563\\
+intersection&1.343693&3.476027\\
+forest&1.427707&0.113855\\
+single-wall&1.010225&1.200634\\
+\end{tabular}
+\end{table}
+
+\begin{table}[]
+\centering
+  \caption{Factor of BEAST CPU Time (KinematicCar)}
+\begin{tabular}{c c c}
+&P--PRM&KPIECE\\
+3-ladder&0.140014&0.895474\\
+parking-lot&0.184890&1.706023\\
+intersection&0.249037&1.859437\\
+forest&0.158820&0.860355\\
+single-wall&0.242285&0.339684\\
+\end{tabular}
+\end{table}
+
+\begin{table}[]
+\centering
+  \caption{Factor of BEAST CPU Time (Quadrotor)}
+\begin{tabular}{c c c}
+&P--PRM&KPIECE\\
+forest&0.288588&3.519528\\
+fifthelement&0.493464&1.021684\\
+\end{tabular}
+\end{table}
+
+\end{document}
