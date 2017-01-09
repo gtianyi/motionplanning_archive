@@ -18,15 +18,15 @@ STARTGOAL[1]="Start ? 0.1 0.1 -1\nGoal ? 0 -26 -1\n"
 BOUNDS[1]="-30 30 -30 30 -5 5"
 
 MAP[2]="forest.dae"
-STARTGOAL[2]="Start ? 3 -5 1\nGoal ? 0 -25 0\n"
+STARTGOAL[2]="Start ? 0 5 1\nGoal ? 0 -25 0\n"
 BOUNDS[2]="-30 30 -30 30 -5 5"
 
 MAP[3]="forest.dae"
-STARTGOAL[3]="Start ? -3 -5 1\nGoal ? 1 -25 1\n"
+STARTGOAL[3]="Start ? 0 5 1\nGoal ? 1 -25 1\n"
 BOUNDS[3]="-30 30 -30 30 -5 5"
 
 MAP[4]="forest.dae"
-STARTGOAL[4]="Start ? -5 -5 -2\nGoal ? 5 -25 -3\n"
+STARTGOAL[4]="Start ? 0 5 -2\nGoal ? 5 -25 -3\n"
 BOUNDS[4]="-30 30 -30 30 -5 5"
 
 # FIFTH ELEMENT
